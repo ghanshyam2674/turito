@@ -4,5 +4,626 @@
   box-sizing: border-box;
 }
 
+.heading {
+  font-size: 27px;
+}
 
+.heading-div {
+  position: relative;
+  width: 350px;
+  text-align: center;
+  margin: auto;
+}
+
+.h-heading {
+  font-size: 50px;
+}
+
+.heading::before {
+  content: " ";
+  height: 2px;
+  width: 40px;
+  background-color: red;
+  position: absolute;
+  right: 90px;
+  margin-top: 20px;
+}
+.heading::after {
+  content: " ";
+  height: 2px;
+  width: 40px;
+  background-color: red;
+  position: absolute;
+  left: 90px;
+  margin-top: 20px;
+}
+
+/* wrapper section starts here */
+
+.wrapper {
+  height: 100vh;
+  background-image: url("./img/mainbg.jpg");
+}
+
+.navbar {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-transform: uppercase;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 35px;
+}
+
+.navbar ul {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+}
+
+.hii {
+  font-size: 50px;
+  color: navy;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.name h1 {
+  font-size: 50px;
+  margin-left: 40px;
+  color: navy;
+  /* margin-bottom: 20px; */
+}
+
+.paragraph {
+  margin-top: 30px;
+  width: 500px;
+  font-size: 30px;
+  /* color: navy; */
+}
+
+.btn-main {
+  width: 220px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-main button {
+  padding: 15px;
+  background-color: navy;
+  color: white;
+  font-size: 15px;
+}
+
+.btn-main a {
+  font-size: 25px;
+}
+
+.para {
+  font-size: 40px;
+  margin-bottom: 34px;
+  color: navy;
+}
+
+.navbar button {
+  /* width: 30px; */
+  padding: 15px;
+  background-color: navy;
+  color: white;
+  font-size: 15px;
+  width: 150px;
+}
+
+/* nav main div starts here  */
+
+.main-div {
+  /* margin-top: 10vh; */
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center; */
+  /* border: 2px solid red; */
+}
+
+.main-image {
+  height: 100%;
+  display: flex;
+  /* flex-direction: column; */
+  /* justify-content: flex-end; */
+  align-items: flex-end;
+  /* border: 2px solid red; */
+}
+
+.main-div img {
+  /* height: 220px; */
+}
+
+.main-div p {
+}
+
+/* clintes section starts here */
+
+.clintes {
+  /* margin-top: 100px; */
+  height: 250px;
+  width: 100%;
+  color: white;
+  background-color: #24315e;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  /* font-size: 40px; */
+  padding: 50px;
+}
+
+/* hello section starts here */
+
+.hello {
+  height: auto;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 10% 0 10%;
+}
+
+/* qualities section starts here */
+
+.qualities {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #24315e;
+}
+
+.quality {
+  padding: 60px;
+}
+
+.quality p {
+}
+
+.q-heading {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 23px;
+}
+
+/* my skills section starts here  */
+
+.my-skills {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.m-skills-image {
+  height: 80%;
+  width: 70%;
+  background-image: url("./img/1.jpg");
+  padding: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  column-gap: 20px;
+}
+
+.m-skills-image div {
+  height: 50px;
+  width: 100px;
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.statistics {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  /* border: 2px solid red; */
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.s-1 {
+  /* width: 20%; */
+  display: flex;
+}
+
+.para-div {
+  padding: 33px;
+  width: 600px;
+}
+
+/* about me section starts here  */
+
+#about {
+  height: 100vh;
+  background-image: url("./img/background.jpg");
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+.a-1 {
+  width: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  /* top: 20px;
+  left: 20px; */
+  /* justify-content: center; */
+}
+
+.a-1 div {
+  height: 100px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  position: absolute;
+  top: 70%;
+  left: 10%;
+  background-color: white;
+  padding: 2%;
+  border: 2px solid yellow;
+  z-index: 3;
+}
+
+.element {
+  position: absolute;
+  top: 10px;
+  left: -50px;
+  z-index: 1;
+}
+
+.photo {
+  position: relative;
+  z-index: 2;
+}
+
+.a-2 {
+  width: 50%;
+  /* border: 2px solid red; */
+}
+
+.element2 {
+  position: absolute;
+  bottom: -70px;
+  right: -50px;
+  z-index: -1;
+}
+
+.hire-me {
+  height: 90%;
+  width: 90%;
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 30px;
+  padding: 80px;
+  position: relative;
+  z-index: 2;
+}
+
+.hire-me h1 {
+  font-size: 50px;
+}
+
+.hire-me p {
+  font-size: 20px;
+}
+
+.hire-me button {
+  /* height: 20px; */
+  width: 200px;
+  padding: 20px;
+  background-color: navy;
+  color: white;
+  font-size: 20px;
+  /* margin: auto; */
+}
+
+/* teammates section starts here */
+
+.teammates {
+  height: auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.teammates-para {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding-left: 50px;
+}
+
+/* portfolio section starts here */
+
+.portfolio {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  /* flex-wrap: wrap; */
+}
+
+.project {
+  height: auto;
+  width: 100%;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+  row-gap: 30px;
+}
+
+.project1 {
+  height: 350px;
+  width: 650px;
+  /* border: 2px solid black; */
+  position: relative;
+}
+
+.project1 div,
+.project2 div {
+  display: none;
+}
+
+.project1:hover div,
+.project2:hover div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85px;
+  width: 100%;
+  background-color: darkorchid;
+  position: absolute;
+  bottom: 15px;
+  color: white;
+  font-weight: 900;
+}
+
+.p-details {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  /* border: 2px solid yellow; */
+  background-color: red;
+  position: absolute;
+  bottom: 3px;
+}
+
+.project1 img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+}
+
+.project2 {
+  height: 336.33px;
+  width: 436.33px;
+  /* border: 2px solid black; */
+  position: relative;
+}
+
+.project2 img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+}
+
+/* faq section starts here */
+
+.faq {
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.faq-heading {
+  text-align: center;
+  font-size: 30px;
+  padding: 50px;
+}
+
+.faq-heading span {
+}
+
+.faq-div {
+  color: white;
+  height: 90px;
+  width: 80%;
+  background-color: navy;
+  margin: 10px;
+  padding: 20px;
+}
+
+.freelancing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 40px;
+  height: 320px;
+  background-image: url("./img/mainbg.jpg");
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.freelancing button {
+  /* height: 30px; */
+  width: 300px;
+  padding: 20px;
+  background-color: navy;
+  color: white;
+  font-size: 20px;
+}
+
+/* blog section starts here */
+
+#news {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+
+.header {
+  height: auto;
+  width: 100%;
+  text-align: start;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  width: 309.66px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.p-paragraph {
+  font-size: 25px;
+  color: navy;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.datetime h4 {
+  margin-top: 10px;
+  color: rgb(35, 34, 34);
+  font-size: 20px;
+}
+
+.images {
+  height: auto;
+  /* width: 309.66px; */
+  border: 2px solid rgb(28, 27, 27);
+  border-radius: 40px;
+}
+
+.images img {
+  height: 100%;
+  width: 100%;
+  border-radius: 40px;
+}
+
+.images:hover img {
+  zoom: 2px;
+}
+
+/* contect section starts here */
+
+#contect {
+  display: flex;
+  background-image: url("./img/background\ \(1\).jpg");
+  padding: 50px;
+  margin-top: 50px;
+}
+
+.c-1 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  row-gap: 50px;
+  color: white;
+  padding-left: 90px;
+}
+
+form {
+  background-color: white;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  row-gap: 10px;
+}
+
+form input {
+  padding: 20px;
+  border: 2px solid navy;
+}
+
+form button {
+  padding: 15px;
+  border: 2px solid navy;
+  background-color: aqua;
+  color: navy;
+}
+
+textarea {
+  resize: none;
+  border: 2px solid navy;
+}
+
+.c-2-div {
+  width: 40%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.c-2-div img {
+  height: 40px;
+  width: 40px;
+  background-color: navy;
+  border-radius: 100%;
+  color: white;
+}
+
+/* footer section starts here */
+
+footer {
+  height: 100px;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.155);
+}
+
+/* responsive disign  */
 
