@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-body {
-  /* overflow:hidden; */
-}
-
 .heading {
   font-size: 27px;
 }
@@ -80,6 +76,13 @@ body {
 .navbar ul li a {
   text-decoration: none;
   color: #24315e;
+  cursor: pointer;
+  transition: all 1s;
+  font-size: 20px;
+}
+
+.navbar ul li a:hover {
+  color: rgb(255, 72, 0);
 }
 
 .navbar button {
@@ -95,6 +98,7 @@ body {
   margin-bottom: 34px;
   color: #24315e;
 }
+
 /* nav main div starts here  */
 
 .main-div {
@@ -105,7 +109,7 @@ body {
   position: relative;
 }
 
-.social{
+.social {
   width: 200px;
   position: absolute;
   bottom: 30px;
@@ -116,7 +120,7 @@ body {
   justify-content: space-around;
 }
 
-.social i{
+.social i {
   height: 50px;
   width: 50px;
   background-color: white;
@@ -133,6 +137,10 @@ body {
   align-items: flex-end;
 }
 
+.image {
+  width: 100%;
+}
+
 .name {
   width: 60%;
   display: flex;
@@ -141,11 +149,11 @@ body {
   padding-left: 100px;
 }
 
-.name-div{
+.name-div {
   height: 70%;
   display: flex;
   flex-direction: column;
-  justify-content:flex-end ;
+  justify-content: flex-end;
 }
 
 .hii {
@@ -335,7 +343,7 @@ body {
 .element2 {
   position: absolute;
   bottom: -70px;
-  right: -50px;
+  right: -30px;
   z-index: -1;
 }
 
@@ -396,7 +404,7 @@ body {
 
 /* portfolio section starts here */
 
-.portfolio {
+#portfolio {
   width: 100%;
   height: auto;
   display: flex;
@@ -561,15 +569,22 @@ body {
 }
 
 .images {
-  height: auto;
+  width: 350px;
+  height: 236.05px;
   border: 2px solid rgb(28, 27, 27);
   border-radius: 100px;
+  overflow: hidden;
 }
 
 .images img {
-  height: 100%;
-  width: 100%;
+  height: 236.05px;
+  width: 350px;
   border-radius: 100px;
+}
+
+.images:hover img {
+  transform: scale(105%);
+  transition: all 100ms ease-in-out;
 }
 
 /* contect section starts here */
@@ -592,7 +607,7 @@ body {
   padding-left: 90px;
 }
 
-.c-1-call{
+.c-1-call {
   font-size: 22px;
 }
 
@@ -658,7 +673,6 @@ footer {
 /* responsive disign  */
 
 @media screen and (max-width: 768px) and (min-width: 500px) {
-
   /* navbar section starts here  */
   .wrapper {
     width: 100%;
@@ -687,7 +701,13 @@ footer {
   }
 
   #input1:checked ~ ul {
-    display: block;
+    width: 100%;
+    position: absolute;
+    top: 14vh;
+    left: 0;
+    display: inline;
+    background-color: white;
+    padding-left: 20px;
   }
 
   .label1 {
@@ -700,10 +720,6 @@ footer {
     flex-direction: column;
     justify-content: center;
     padding: 0px;
-  }
-
-  .paragraph {
-    width: 100%;
   }
 
   .header {
@@ -720,12 +736,21 @@ footer {
   }
 
   .image {
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: 50%;
+  }
+
+  .qualities {
+    width: 768px;
+    border: 2px solid red;
+  }
+
+  .m-skills-image {
   }
 
   .quality {
-    width: 320px;
+    width: 350px;
+    padding: 20px;
   }
 
   .a-2,
@@ -808,8 +833,15 @@ footer {
     width: 100%;
   }
 
-  .c-1-call{
+  .c-1-call {
     font-size: 20px;
+  }
+
+  .element2 {
+    position: absolute;
+    bottom: -70px;
+    right: 0px;
+    z-index: -1;
   }
 }
 
@@ -824,7 +856,7 @@ footer {
 
   .m-skills-image {
     height: 350px;
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -833,8 +865,8 @@ footer {
   }
 
   .m-skills-image div {
-    height: 50px;
-    width: 100px;
+    height: 25px;
+    width: 60px;
     background-color: white;
     border: 2px solid black;
     color: black;
@@ -854,11 +886,12 @@ footer {
     justify-content: space-between;
     background-color: white;
     border-bottom: #24315e;
+    padding: 20px;
   }
 
   .navbar img,
   .label1 {
-    width: 200px;
+    width: 100px;
   }
 
   .navbar ul {
@@ -870,7 +903,13 @@ footer {
   }
 
   #input1:checked ~ ul {
-    display: block;
+    width: 100%;
+    position: absolute;
+    top: 8vh;
+    left: 0;
+    display: inline;
+    background-color: white;
+    padding-left: 20px;
   }
 
   .label1 {
@@ -885,6 +924,97 @@ footer {
     flex-direction: column;
     justify-content: center;
     padding: 0px;
+  }
+
+  .hii {
+    font-size: 40px;
+  }
+
+  .name h1 {
+    font-size: 50px;
+  }
+
+  .para {
+    font-size: 30px;
+  }
+
+  .btn-main {
+    width: 200px;
+  }
+
+  .btn-main button {
+    width: 100px;
+    /* height: 20px; */
+    font-size: 13px;
+  }
+
+  .heading {
+    font-size: 20px;
+  }
+
+  .paragraph {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .para-div {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .para-div p {
+    width: 100%;
+  }
+
+  .h-heading {
+    font-size: 20px;
+  }
+
+  .teammates img {
+    width: 80%;
+  }
+
+  .photo {
+    width: 80%;
+  }
+
+  .hire-me {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .hire-me h1 {
+    font-size: 30px;
+  }
+
+  .hire-me p {
+    font-size: 15px;
+  }
+
+  .hire-me button {
+    width: 150px;
+  }
+
+  .teammates-para h1 {
+    font-size: 25px;
+  }
+
+  .p-paragraph {
+    font-size: 15px;
+  }
+
+  .faq-div {
+    width: 100%;
+    color: 20px;
+  }
+
+  .faq-div h1 {
+    font-size: 20px;
+  }
+
+  #contect {
+    width: 100%;
+    padding: 20px;
   }
 
   .paragraph {
@@ -904,8 +1034,9 @@ footer {
     width: 50%;
   }
 
-  .image{
-    width: 200px;
+  .image {
+    width: 100%;
+    height: 50%;
   }
 
   .quality {
@@ -928,10 +1059,10 @@ footer {
   }
 
   .statistics {
-    width: 1150px;
+    width: 100%;
     display: flex;
     justify-content: space-around;
-    padding: 30px;
+    padding: 20px;
     font-size: 10px;
     margin-bottom: 40px;
   }
@@ -950,10 +1081,19 @@ footer {
 
   .faq {
     width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .faq-heading,
+  .faq-div {
+    width: 100%;
   }
 
   #news {
     width: 100%;
+    padding: 20px;
+    /* border: 2px solid red; */
   }
 
   .card {
@@ -973,19 +1113,27 @@ footer {
   .c-2 {
     width: 100%;
     margin-bottom: 20px;
+    /* padding: 20px; */
   }
 
   .c-1 {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-content: center;
     row-gap: 50px;
     color: white;
-    padding-left: 90px;
+    border: 2px solid red;
+    padding-left: 0px;
   }
 
-  .c-1-call{
+  .c-1-call {
     font-size: 15px;
+  }
+
+  .element2 {
+    position: absolute;
+    bottom: -70px;
+    right: 10px;
+    z-index: -1;
   }
 }
