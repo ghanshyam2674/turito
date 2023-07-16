@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  /* overflow:hidden; */
+}
+
 .heading {
   font-size: 27px;
 }
@@ -38,6 +42,11 @@
   margin-top: 20px;
 }
 
+.b-hover:hover {
+  background-color: #24315e;
+  color: white;
+}
+
 /* wrapper section starts here */
 
 .wrapper {
@@ -56,6 +65,9 @@
   top: 0;
   left: 0;
   padding: 35px;
+  z-index: 10;
+  border-bottom: 2px solid #24315e;
+  background-color: white;
 }
 
 .navbar ul {
@@ -67,44 +79,104 @@
 
 .navbar ul li a {
   text-decoration: none;
+  color: #24315e;
+}
+
+.navbar button {
+  padding: 15px;
+  background-color: #24315e;
+  color: white;
+  font-size: 15px;
+  width: 150px;
+}
+
+.para {
+  font-size: 40px;
+  margin-bottom: 34px;
+  color: #24315e;
+}
+/* nav main div starts here  */
+
+.main-div {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+
+.social{
+  width: 200px;
+  position: absolute;
+  bottom: 30px;
+  right: 100px;
+  z-index: 8;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.social i{
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-image {
+  width: 50%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.name {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 100px;
+}
+
+.name-div{
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-end ;
 }
 
 .hii {
   font-size: 50px;
-  color: navy;
-}
-
-.name {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  color: #24315e;
+  /* font-weight: 600; */
 }
 
 .name h1 {
   font-size: 50px;
-  margin-left: 40px;
-  color: navy;
-  /* margin-bottom: 20px; */
+  color: #24315e;
 }
 
 .paragraph {
   margin-top: 30px;
   width: 500px;
   font-size: 30px;
-  /* color: navy; */
 }
 
 .btn-main {
-  width: 220px;
+  width: 280px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .btn-main button {
-  padding: 15px;
-  background-color: navy;
-  color: white;
+  width: 150px;
+  padding: 20px;
+  background-color: white;
+  color: #24315e;
   font-size: 15px;
 }
 
@@ -112,62 +184,13 @@
   font-size: 25px;
 }
 
-.para {
-  font-size: 40px;
-  margin-bottom: 34px;
-  color: navy;
-}
-
-.navbar button {
-  /* width: 30px; */
-  padding: 15px;
-  background-color: navy;
-  color: white;
-  font-size: 15px;
-  width: 150px;
-}
-
-/* nav main div starts here  */
-
-.main-div {
-  /* margin-top: 10vh; */
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  /* align-items: center; */
-  /* border: 2px solid red; */
-}
-
-.main-image {
-  height: 100%;
-  display: flex;
-  /* flex-direction: column; */
-  /* justify-content: flex-end; */
-  align-items: flex-end;
-  /* border: 2px solid red; */
-}
-
-.main-div img {
-  /* height: 220px; */
-}
-
-.main-div p {
-}
-
 /* clintes section starts here */
 
 .clintes {
-  /* margin-top: 100px; */
-  height: 250px;
   width: 100%;
   color: white;
   background-color: #24315e;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
   text-align: center;
-  /* font-size: 40px; */
   padding: 50px;
 }
 
@@ -175,26 +198,27 @@
 
 .hello {
   height: auto;
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0 10% 0 10%;
 }
 
 /* qualities section starts here */
 
 .qualities {
-  height: 300px;
-  width: 100%;
+  width: 1150px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   color: #24315e;
+  margin: 70px 0px 70px 0px;
 }
 
 .quality {
-  padding: 60px;
+  width: 300px;
+  padding: 30px;
 }
 
 .quality p {
@@ -209,26 +233,27 @@
 /* my skills section starts here  */
 
 .my-skills {
-  height: 500px;
-  width: 100%;
+  width: 1150px;
   display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
   justify-content: space-around;
+  margin-bottom: 50px;
 }
 
 .m-skills-image {
-  height: 80%;
-  width: 70%;
+  height: 350px;
+  width: 550px;
   background-image: url("./img/1.jpg");
-  padding: 100px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  column-gap: 20px;
+  padding: 80px;
 }
 
 .m-skills-image div {
   height: 50px;
-  width: 100px;
+  width: 130px;
   background-color: white;
   border: 2px solid black;
   color: black;
@@ -237,49 +262,48 @@
   align-items: center;
 }
 
+.para-div {
+  width: 562px;
+}
+
+.para-div * {
+  margin-bottom: 30px;
+}
+
+.para-div p {
+  width: 400px;
+}
+
 .statistics {
-  width: 100%;
+  width: 1150px;
   display: flex;
   justify-content: space-around;
   padding: 30px;
-  /* border: 2px solid red; */
   font-size: 30px;
   margin-bottom: 40px;
 }
 
 .s-1 {
-  /* width: 20%; */
   display: flex;
-}
-
-.para-div {
-  padding: 33px;
-  width: 600px;
 }
 
 /* about me section starts here  */
 
 #about {
-  height: 100vh;
   background-image: url("./img/background.jpg");
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
-  /* align-items: center; */
-  /* justify-content: center; */
 }
 
 .a-1 {
-  width: 50%;
+  width: 500px;
   position: relative;
   display: flex;
   justify-content: center;
-  /* top: 20px;
-  left: 20px; */
-  /* justify-content: center; */
 }
 
 .a-1 div {
-  height: 100px;
   width: 250px;
   display: flex;
   align-items: center;
@@ -289,7 +313,6 @@
   left: 10%;
   background-color: white;
   padding: 2%;
-  border: 2px solid yellow;
   z-index: 3;
 }
 
@@ -307,7 +330,6 @@
 
 .a-2 {
   width: 50%;
-  /* border: 2px solid red; */
 }
 
 .element2 {
@@ -320,7 +342,6 @@
 .hire-me {
   height: 90%;
   width: 90%;
-  /* border: 2px solid red; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -339,33 +360,38 @@
 }
 
 .hire-me button {
-  /* height: 20px; */
   width: 200px;
   padding: 20px;
-  background-color: navy;
-  color: white;
+  background-color: white;
+  color: #24315e;
   font-size: 20px;
-  /* margin: auto; */
 }
 
 /* teammates section starts here */
 
 .teammates {
-  height: auto;
-  width: 80%;
+  width: 100%;
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  margin: auto;
   margin-top: 50px;
 }
 
+.teammates img {
+  width: 400px;
+}
+
 .teammates-para {
-  height: 100%;
+  width: 700px;
   display: flex;
   flex-direction: column;
   row-gap: 20px;
   padding-left: 50px;
+}
+
+.teammates-para p {
+  width: 100%;
 }
 
 /* portfolio section starts here */
@@ -374,16 +400,16 @@
   width: 100%;
   height: auto;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   margin-top: 50px;
-  /* flex-wrap: wrap; */
+  align-items: center;
 }
 
 .project {
   height: auto;
   width: 100%;
   display: flex;
-  /* flex-direction: column; */
   justify-content: space-evenly;
   flex-wrap: wrap;
   width: 100%;
@@ -392,8 +418,7 @@
 
 .project1 {
   height: 350px;
-  width: 650px;
-  /* border: 2px solid black; */
+  width: 640px;
   position: relative;
 }
 
@@ -421,7 +446,6 @@
   width: 100%;
   display: flex;
   align-items: center;
-  /* border: 2px solid yellow; */
   background-color: red;
   position: absolute;
   bottom: 3px;
@@ -435,8 +459,7 @@
 
 .project2 {
   height: 336.33px;
-  width: 436.33px;
-  /* border: 2px solid black; */
+  width: 420px;
   position: relative;
 }
 
@@ -449,12 +472,12 @@
 /* faq section starts here */
 
 .faq {
-  /* border: 2px solid red; */
+  width: 80%;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
 }
 
 .faq-heading {
@@ -463,19 +486,17 @@
   padding: 50px;
 }
 
-.faq-heading span {
-}
-
 .faq-div {
   color: white;
   height: 90px;
-  width: 80%;
-  background-color: navy;
-  margin: 10px;
+  width: 100%;
+  background-color: #24315e;
   padding: 20px;
+  margin-bottom: 30px;
 }
 
 .freelancing {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -488,39 +509,39 @@
 }
 
 .freelancing button {
-  /* height: 30px; */
   width: 300px;
   padding: 20px;
-  background-color: navy;
-  color: white;
+  background-color: white;
+  color: #24315e;
   font-size: 20px;
 }
 
 /* blog section starts here */
 
 #news {
-  width: 80%;
+  width: 100%;
   height: auto;
-  margin: auto;
-  padding: 30px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   row-gap: 50px;
+  align-items: center;
 }
 
 .header {
+  width: 1150px;
   height: auto;
-  width: 100%;
-  text-align: start;
 }
 
 .cards {
+  width: 1150px;
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .card {
-  width: 309.66px;
+  width: 350px;
   display: flex;
   flex-direction: column;
   row-gap: 20px;
@@ -528,7 +549,7 @@
 
 .p-paragraph {
   font-size: 25px;
-  color: navy;
+  color: #24315e;
   text-align: justify;
   margin-bottom: 20px;
 }
@@ -541,25 +562,21 @@
 
 .images {
   height: auto;
-  /* width: 309.66px; */
   border: 2px solid rgb(28, 27, 27);
-  border-radius: 40px;
+  border-radius: 100px;
 }
 
 .images img {
   height: 100%;
   width: 100%;
-  border-radius: 40px;
-}
-
-.images:hover img {
-  zoom: 2px;
+  border-radius: 100px;
 }
 
 /* contect section starts here */
 
 #contect {
   display: flex;
+  flex-wrap: wrap;
   background-image: url("./img/background\ \(1\).jpg");
   padding: 50px;
   margin-top: 50px;
@@ -575,6 +592,15 @@
   padding-left: 90px;
 }
 
+.c-1-call{
+  font-size: 22px;
+}
+
+.c-1-call h1:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 form {
   background-color: white;
   width: 40%;
@@ -586,19 +612,19 @@ form {
 
 form input {
   padding: 20px;
-  border: 2px solid navy;
+  border: 2px solid #24315e;
 }
 
 form button {
   padding: 15px;
-  border: 2px solid navy;
+  border: 2px solid #24315e;
   background-color: aqua;
-  color: navy;
+  color: #24315e;
 }
 
 textarea {
   resize: none;
-  border: 2px solid navy;
+  border: 2px solid #24315e;
 }
 
 .c-2-div {
@@ -609,12 +635,16 @@ textarea {
   align-items: center;
 }
 
-.c-2-div img {
+.c-2-div i {
   height: 40px;
   width: 40px;
-  background-color: navy;
+  background-color: #24315e;
   border-radius: 100%;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 /* footer section starts here */
@@ -627,3 +657,335 @@ footer {
 
 /* responsive disign  */
 
+@media screen and (max-width: 768px) and (min-width: 500px) {
+
+  /* navbar section starts here  */
+  .wrapper {
+    width: 100%;
+    height: auto;
+  }
+
+  .navbar {
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: white;
+  }
+
+  .navbar img,
+  .label1 {
+    /* width: 200px; */
+  }
+
+  .navbar ul {
+    display: none;
+  }
+
+  .navbar button {
+    display: none;
+  }
+
+  #input1:checked ~ ul {
+    display: block;
+  }
+
+  .label1 {
+    display: block;
+  }
+
+  .name {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px;
+  }
+
+  .paragraph {
+    width: 100%;
+  }
+
+  .header {
+    width: 100%;
+  }
+  /* nav main div starts here  */
+
+  .main-div {
+    width: 100%;
+  }
+
+  .main-image {
+    width: 40%;
+  }
+
+  .image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .quality {
+    width: 320px;
+  }
+
+  .a-2,
+  .hire-me {
+    width: 100%;
+  }
+
+  /* hello section starts here  */
+
+  .hello {
+    width: 100%;
+  }
+
+  .statistics {
+    width: 1150px;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+
+  /* .teammates section starts here  */
+
+  .teammates-para {
+    margin-top: 20px;
+    padding: 20px;
+  }
+
+  .project * {
+    width: 100%;
+    height: auto;
+  }
+
+  .faq {
+    width: 100%;
+  }
+
+  .freelancing {
+    width: 100%;
+  }
+
+  #news {
+    width: 100%;
+  }
+
+  .card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    justify-content: center;
+  }
+
+  .cards {
+    width: 80%;
+    row-gap: 50px;
+  }
+
+  .c-1,
+  .c-2 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .c-1 {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    row-gap: 50px;
+    color: white;
+    padding-left: 90px;
+  }
+
+  .my-skills {
+    width: 100%;
+  }
+
+  .statistics {
+    width: 100%;
+  }
+
+  .c-1-call{
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .quality {
+    width: 100%;
+  }
+
+  .my-skills {
+    width: 100%;
+  }
+
+  .m-skills-image {
+    height: 350px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* gap: 10px; */
+    /* padding: 80px; */
+  }
+
+  .m-skills-image div {
+    height: 50px;
+    width: 100px;
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wrapper {
+    width: 100%;
+    height: auto;
+  }
+
+  .navbar {
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: white;
+    border-bottom: #24315e;
+  }
+
+  .navbar img,
+  .label1 {
+    width: 200px;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+
+  .navbar button {
+    display: none;
+  }
+
+  #input1:checked ~ ul {
+    display: block;
+  }
+
+  .label1 {
+    display: block;
+  }
+
+  /* nav main div starts here  */
+
+  .name {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px;
+  }
+
+  .paragraph {
+    width: 100%;
+  }
+
+  .header {
+    width: 100%;
+  }
+  /* nav main div starts here  */
+
+  .main-div {
+    width: 100%;
+  }
+
+  .main-image {
+    width: 50%;
+  }
+
+  .image{
+    width: 200px;
+  }
+
+  .quality {
+    width: 100%;
+  }
+
+  .q-heading {
+    width: 60%;
+  }
+
+  .a-2,
+  .hire-me {
+    width: 100%;
+  }
+
+  /* hello section starts here  */
+
+  .hello {
+    width: 100%;
+  }
+
+  .statistics {
+    width: 1150px;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    font-size: 10px;
+    margin-bottom: 40px;
+  }
+
+  /* .teammates section starts here  */
+
+  .teammates-para {
+    margin-top: 20px;
+    padding: 20px;
+  }
+
+  .project * {
+    width: 100%;
+    height: auto;
+  }
+
+  .faq {
+    width: 100%;
+  }
+
+  #news {
+    width: 100%;
+  }
+
+  .card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    justify-content: center;
+  }
+
+  .cards {
+    width: 80%;
+    row-gap: 50px;
+  }
+
+  .c-1,
+  .c-2 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .c-1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    row-gap: 50px;
+    color: white;
+    padding-left: 90px;
+  }
+
+  .c-1-call{
+    font-size: 15px;
+  }
+}
