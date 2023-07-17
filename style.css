@@ -46,7 +46,8 @@
 /* wrapper section starts here */
 
 .wrapper {
-  height: 100vh;
+  margin-top: 10vh;
+  height: 90vh;
   background-image: url("./img/mainbg.jpg");
 }
 
@@ -94,7 +95,7 @@
 }
 
 .para {
-  font-size: 40px;
+  font-size: 30px;
   margin-bottom: 34px;
   color: #24315e;
 }
@@ -102,10 +103,10 @@
 /* nav main div starts here  */
 
 .main-div {
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   position: relative;
 }
 
@@ -132,25 +133,27 @@
 }
 
 .main-image {
-  width: 50%;
+  width: 30%;
   display: flex;
   align-items: flex-end;
 }
 
 .image {
+  height: 90%;
   width: 100%;
 }
 
 .name {
-  width: 60%;
+  width: 40%;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   justify-content: space-around;
-  padding-left: 100px;
+
 }
 
 .name-div {
-  height: 70%;
+  height: 60%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -163,14 +166,16 @@
 }
 
 .name h1 {
-  font-size: 50px;
+  font-size: 70px;
   color: #24315e;
 }
 
 .paragraph {
-  margin-top: 30px;
   width: 500px;
-  font-size: 30px;
+  font-size: 20px;
+  font-weight: 800;
+  font-style: italic;
+  color: #24315e;
 }
 
 .btn-main {
@@ -182,7 +187,7 @@
 
 .btn-main button {
   width: 150px;
-  padding: 20px;
+  padding: 15px;
   background-color: white;
   color: #24315e;
   font-size: 15px;
@@ -491,7 +496,7 @@
 .faq-heading {
   text-align: center;
   font-size: 30px;
-  padding: 50px;
+  padding: 0px;
 }
 
 .faq-div {
@@ -725,7 +730,7 @@ footer {
   }
 
   .name {
-    width: 60%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -745,9 +750,34 @@ footer {
     width: 40%;
   }
 
+  .para{
+    font-size: 25px;
+  }
+
+  .hii{
+    font-size: 30px;
+  }
+
+  .name h1{
+    font-size: 60px;
+  }
+
+  .btn-main{
+    width: 200px;
+  }
+
+  .btn-main button{
+    width: 100px;
+  }
+
+  .paragraph{
+    width: 400px;
+    font-size: 15px;
+  }
+
   .image {
     width: 100%;
-    height: 50%;
+    height: 70%;
   }
 
   .qualities {
@@ -870,8 +900,6 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    /* gap: 10px; */
-    /* padding: 80px; */
   }
 
   .m-skills-image div {
@@ -928,7 +956,6 @@ footer {
     top: 20.5vh;
     left: 0;
     display: inline;
-    /* background-color: white; */
     padding-left: 20px;
   }
 
@@ -937,6 +964,14 @@ footer {
   }
 
   /* nav main div starts here  */
+
+
+  .heading-div {
+    position: relative;
+    width: 300px;
+    text-align: center;
+    margin: auto;
+  }
 
   .name {
     width: 50%;
@@ -947,25 +982,24 @@ footer {
   }
 
   .hii {
-    font-size: 40px;
+    font-size: 25px;
   }
 
   .name h1 {
-    font-size: 50px;
+    font-size: 40px;
   }
 
   .para {
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .btn-main {
-    width: 200px;
+    width: 180px;
   }
 
   .btn-main button {
-    width: 100px;
-    /* height: 20px; */
-    font-size: 13px;
+    width: 90px;
+    font-size: 10px;
   }
 
   .heading {
@@ -974,7 +1008,11 @@ footer {
 
   .paragraph {
     width: 100%;
-    font-size: 20px;
+    font-size: 13px;
+  }
+
+  .btn-main a{
+    font-size: 18px;
   }
 
   .para-div {
@@ -1037,9 +1075,6 @@ footer {
     padding: 20px;
   }
 
-  .paragraph {
-    width: 100%;
-  }
 
   .header {
     width: 80%;
@@ -1051,12 +1086,25 @@ footer {
   }
 
   .main-image {
-    width: 50%;
+    width: 45%;
+  }
+
+  .social{
+    width: 150px;
+  }
+
+  .social i{
+    width: 35px;
+    height: 35px;
+  }
+
+  .clintes{
+    padding: 0;
   }
 
   .image {
     width: 100%;
-    height: 50%;
+    height: 70%;
   }
 
   .quality {
@@ -1111,6 +1159,7 @@ footer {
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 50px;
   }
 
   .faq-heading,
@@ -1143,7 +1192,7 @@ footer {
   }
 
   .images {
-    width: 290px;
+    width: 100%;
   }
 
   .images img{
