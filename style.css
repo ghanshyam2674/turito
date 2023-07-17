@@ -710,6 +710,16 @@ footer {
     padding-left: 20px;
   }
 
+  #input1:checked ~ button{
+    width: 100%;
+    position: absolute;
+    top: 26.5vh;
+    left: 0;
+    display: inline;
+    /* background-color: white; */
+    padding-left: 20px;
+  }
+
   .label1 {
     display: block;
   }
@@ -822,7 +832,7 @@ footer {
     align-content: center;
     row-gap: 50px;
     color: white;
-    padding-left: 90px;
+    padding-left: 0px;
   }
 
   .my-skills {
@@ -902,13 +912,23 @@ footer {
     display: none;
   }
 
-  #input1:checked ~ ul {
+  #input1:checked ~ ul{
     width: 100%;
     position: absolute;
     top: 8vh;
     left: 0;
     display: inline;
     background-color: white;
+    padding-left: 20px;
+  }
+
+  #input1:checked ~ button{
+    width: 100%;
+    position: absolute;
+    top: 20.5vh;
+    left: 0;
+    display: inline;
+    /* background-color: white; */
     padding-left: 20px;
   }
 
@@ -1022,7 +1042,7 @@ footer {
   }
 
   .header {
-    width: 100%;
+    width: 80%;
   }
   /* nav main div starts here  */
 
@@ -1041,15 +1061,21 @@ footer {
 
   .quality {
     width: 100%;
+    /* padding: 0; */
   }
 
   .q-heading {
     width: 60%;
   }
 
-  .a-2,
-  .hire-me {
+  .a-2 {
     width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hire-me {
+    width: 80%;
   }
 
   /* hello section starts here  */
@@ -1071,12 +1097,14 @@ footer {
 
   .teammates-para {
     margin-top: 20px;
-    padding: 20px;
+    padding: 0px;
+    width: 80%;
   }
 
   .project * {
-    width: 100%;
+    width: 80%;
     height: auto;
+    justify-content: center;
   }
 
   .faq {
@@ -1087,13 +1115,12 @@ footer {
 
   .faq-heading,
   .faq-div {
-    width: 100%;
+    width: 80%;
   }
 
   #news {
     width: 100%;
-    padding: 20px;
-    /* border: 2px solid red; */
+    align-items: center;
   }
 
   .card {
@@ -1107,6 +1134,20 @@ footer {
   .cards {
     width: 80%;
     row-gap: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .qualities {
+    width: 80%;
+  }
+
+  .images {
+    width: 290px;
+  }
+
+  .images img{
+    width: 100%;
   }
 
   .c-1,
@@ -1122,7 +1163,6 @@ footer {
     align-content: center;
     row-gap: 50px;
     color: white;
-    border: 2px solid red;
     padding-left: 0px;
   }
 
