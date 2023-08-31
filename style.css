@@ -6,6 +6,7 @@
 
 .heading {
   font-size: 27px;
+  color: red;
 }
 
 .heading-div {
@@ -23,7 +24,7 @@
   content: " ";
   height: 2px;
   width: 40px;
-  background-color: red;
+  background-color: black;
   position: absolute;
   right: 90px;
   margin-top: 20px;
@@ -32,7 +33,7 @@
   content: " ";
   height: 2px;
   width: 40px;
-  background-color: red;
+  background-color: black;
   position: absolute;
   left: 90px;
   margin-top: 20px;
@@ -491,6 +492,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 50px;
 }
 
 .faq-heading {
@@ -782,7 +784,6 @@ footer {
 
   .qualities {
     width: 768px;
-    border: 2px solid red;
   }
 
   .m-skills-image {
@@ -968,7 +969,7 @@ footer {
 
   .heading-div {
     position: relative;
-    width: 300px;
+    width: 110px;
     text-align: center;
     margin: auto;
   }
@@ -980,6 +981,16 @@ footer {
     justify-content: center;
     padding: 0px;
   }
+
+  .a-1 div{
+    width: 200px;
+    font-size: 20px;
+  }
+
+.freelancing button{
+  width: 80%;
+  font-size: 15px;
+}
 
   .hii {
     font-size: 25px;
@@ -1109,7 +1120,7 @@ footer {
 
   .quality {
     width: 100%;
-    /* padding: 0; */
+    padding: 0;
   }
 
   .q-heading {
@@ -1189,6 +1200,7 @@ footer {
 
   .qualities {
     width: 80%;
+    row-gap: 40px;
   }
 
   .images {
@@ -1224,5 +1236,25 @@ footer {
     bottom: -70px;
     right: 10px;
     z-index: -1;
+  }
+
+  .heading::before {
+    content: " ";
+    height: 2px;
+    width: 40px;
+    background-color: black;
+    position: absolute;
+    right: 90px;
+    margin-top: 20px;
+
+  }
+  .heading::after {
+    content: " ";
+    height: 2px;
+    width: 40px;
+    background-color: black;
+    position: absolute;
+    left: 90px;
+    margin-top: 20px;
   }
 }
